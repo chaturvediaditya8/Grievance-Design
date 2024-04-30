@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: rgba(243, 173, 184, 0.119); */
+}
+/* header section */
+header {
+  background-color: rgba(243, 173, 184, 0.196);
+}
+.col-md-12>h1{
+    background-image: url("/image/cq5dam.web.1800.600.jpeg");
+    background-size: contain;
+    background-clip: text;
+    font-size: 80px;
+    font-weight:900; 
+    line-height: 100px;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+/* navbar section */
+.navbar {
+  background: black!important;
+}
+.navlogo {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  /* filter:drop-shadow(10px 7px 10px white); */
+  /* mix-blend-mode:multiply; */
+  border: none;
+  border-radius: 100px;
+  margin-left: 15px;
+  /* padding: 10 0 px; */
+}
+.navlogo:hover{
+    filter: drop-shadow(10px 9px 22px white);
+    /* mix-blend-mode:normal; */
+    transform: scale(1.102);
+}
+.navlogo:hover{
+    text-shadow: 0px 0px 19px white;
+}
+.navbar-nav li {
+  margin: 0 9px;
+  font-size: 22px;
+  font-weight: 600;
+}
+/* underline part */
+.navbar-nav>li>a::before{
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #f41e1e;
+    transition: all 0.2s;
+}
+.navbar-nav>li>a:hover::before{
+    width: 100%;
+
+}
+/* underline part */
+.navbar-nav > li>a:hover{
+    color: #f41e1e;
+    text-shadow: 0px 0px 20px white;
+    width: 100%;
+    transition: opacity 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: scale(1.102);
+}
+a:active{
+    /* color: red;
+    text-shadow: 0px 0px 20px white; */
+    
+}
+.navbar-nav > li > :not(:hover) {
+  opacity: 0.3;
+  color: white!important;
+}
+/* carousel section */
